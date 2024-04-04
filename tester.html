@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+	font-family: Helvetica;
+	color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+span{
+  display: inline-block;
+  overflow: hidden;
+  animation: .3s swift-up ease-in-out forwards;	
+}
+
+i{
+  font-style: normal;
+  position: relative;
+  top: 55px;
+  animation: .1s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+  to {
+    top: 0;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <section class="container">
+		<h1 class="swift-up-text">It's more fun to be a pirate than to join the Navy.</h1>
+	</section>
+
+  <script>
+    const swiftUpElements = document.querySelectorAll('.swift-up-text');
+
+swiftUpElements.forEach(elem => {
+
+	const words = elem.textContent.split(' ');
+	elem.innerHTML = '';
+
+	words.forEach((el, index) => {
+		words[index] = `<span><i>${words[index]}</i></span>`;
+	});
+
+	elem.innerHTML = words.join(' ');
+
+	const children = document.querySelectorAll('span > i');
+	children.forEach((node, index) => {
+		node.style.animationDelay = `${index * .03}s`;
+	});
+
+});
+  </script>
+</body>
+</html>
