@@ -217,7 +217,7 @@ nav .logo a img {
 .home-fsx-slider {
   width: 100%;
 height: calc(100vh - 100px);
-  background: #f0f0f0;
+  background: #fff;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
