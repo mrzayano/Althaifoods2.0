@@ -143,10 +143,11 @@ nav li:first-child {
   width: 100%;
   height: 70px;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   padding-left: 20px;
 }
-.sidebar li a:hover{
+
+.sidebar li a:hover {
   color: #ff0000;
 }
 
@@ -190,13 +191,23 @@ nav .logo a img {
 
 }
 
+
 .footer-like-navbar-social-links a i {
   font-size: 20px;
-  color: #ff0000;
+  color: #ffffff;
   margin-top: 2px;
 
 
 }
+
+.footer-like-navbar-social-links a:hover i {
+  color: #ff0000;
+}
+.footer-like-navbar-social-links a:hover {
+border-radius: 100%;
+transition: .4s;
+}
+
 
 
 
@@ -216,7 +227,7 @@ nav .logo a img {
 /* home */
 .home-fsx-slider {
   width: 100%;
-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
   background: #fff;
   position: relative;
   display: grid;
