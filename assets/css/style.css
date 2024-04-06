@@ -135,7 +135,6 @@ nav li:first-child {
 
 .sidebar li {
   width: 100%;
-  /* padding-bottom: 20px; */
   font-size: 15px;
 }
 
@@ -159,7 +158,6 @@ nav li:first-child {
 
 
 nav .logo a img {
-  margin-top: 20px;
   width: 100px;
 }
 
@@ -203,9 +201,10 @@ nav .logo a img {
 .footer-like-navbar-social-links a:hover i {
   color: #ff0000;
 }
+
 .footer-like-navbar-social-links a:hover {
-border-radius: 100%;
-transition: .4s;
+  border-radius: 100%;
+  transition: .4s;
 }
 
 
@@ -224,7 +223,7 @@ transition: .4s;
 
 
 
-/* home */
+/* home ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 .home-fsx-slider {
   width: 100%;
   height: calc(100vh - 100px);
@@ -425,6 +424,164 @@ transition: .4s;
   }
 }
 
+
+.social-fsx-icons a i {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.social-fsx-icons a:nth-child(1) i {
+  animation: social-ics-1 .8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes social-ics-1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-fsx-icons a:nth-child(2) i {
+  animation: social-ics-2 .8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes social-ics-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-fsx-icons a:nth-child(3) i {
+  animation: social-ics-3 .8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes social-ics-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+/* /sales team ////////////////////////////////////////////////////////////////////////////////////////// */
+.sales-team {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.sales-team .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/others/Al-THAI-AD-3.jpg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+}
+
+.sales-team .card {
+  max-width: 1000px;
+  width: 500px;
+  border-radius: 10px;
+  padding: 40px;
+  background: #f0f0f0ff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sales-team h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.sales-team .details {
+  margin-bottom: 30px;
+}
+
+.sales-team .details .person {
+  margin-bottom: 20px;
+}
+
+.sales-team .details p {
+  font-size: 18px;
+  color: #555;
+}
+
+.sales-team .contact a {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #ff4f4f;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sales-team .contact a:hover {
+  background-color: #ff6666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 @media (max-width: 800px) {
   header .details-nav {
@@ -521,5 +678,11 @@ transition: .4s;
   .home-fsx-slider h5 {
     margin-left: 40px;
     margin-right: 40px;
+  }
+}
+
+@media(max-width:500px) {
+  .sales-team .card {
+    border-radius: 0;
   }
 }

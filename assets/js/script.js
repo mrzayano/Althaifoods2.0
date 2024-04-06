@@ -89,4 +89,9 @@ function showSidebar() {
     }, 500); // Adjust the delay (in milliseconds) as needed
 });
 
-  
+// sales team  
+window.addEventListener('scroll', function() {
+  var scrollTop = window.scrollY;
+  var bgImg = document.querySelector('.bg-img');
+  bgImg.style.backgroundPosition = 'center ' + (-scrollTop / 3) + 'px';
+});
