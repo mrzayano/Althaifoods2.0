@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
   padding: 0;
@@ -13,8 +14,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Poppins', sans-serif;
-  /* 'poppins' should be 'Poppins' */
+  /* font-family: 'rubic', sans-serif; */
+  background: #fff8f8;
+font-family: 'poppins';
 }
 
 :root {
@@ -518,7 +520,7 @@ nav .logo a img {
 }
 
 .sales-team h2 {
-  color: #333;
+  color: #ff4f4f;
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -534,6 +536,7 @@ nav .logo a img {
 .sales-team .details p {
   font-size: 18px;
   color: #555;
+
 }
 
 .sales-team .contact a {
@@ -553,8 +556,75 @@ nav .logo a img {
 
 
 
+/* ./ menu products /////////////////////////////////////////////////////////////////////////////////////////////// */
+.menu {
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
 
+.menu h2 {
+  color: #ff4f4f;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
+.menu h3 {
+  color: #ff4f4f;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu p {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.menu .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu .card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.menu .card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.menu .card .details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align content evenly */
+  height: 100%;
+}
+
+.menu .card .details h3 {
+  margin-top: 0;
+}
+
+.menu .card .details button {
+  background: #ff4f4f;
+  border: none;
+  height: 40px;
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  align-self: flex-end; /* Align button to the bottom */
+}
 
 
 
