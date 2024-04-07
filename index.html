@@ -35,23 +35,24 @@
     <nav>
         <ul class="sidebar">
             <li onclick="hideSidebar()"><a href="#" target="_parent"><i class="fa-solid fa-xmark"></i></a></li>
-            <li><a href="/menu">Home|الرئيسية</a></li>
-            <li> <a href="#">About|حول</a></li>
-            <li><a href="/promo">Menu|قائمة طعام</a></li>
-            <li><a href="#CONTACT">Contact|اتصال</a></li>
+            <li><a href="/">Home|الرئيسية</a></li>
+            <li> <a href="/our-story">About|حول</a></li>
+            <li><a href="/Menu">Menu|قائمة طعام</a></li>
+            <li><a href="/contact">Contact|اتصال</a></li>
 
             <div class="footer-like-navbar">
 
                 <div class="footer-like-navbar-contact">
                     <h2>Conatct</h2>
-                    <p>00000000000,
-                        00000000000</p>
+                    <p>+971 65673141</p>
                 </div>
                 <div class="footer-like-navbar-social-links">
 
-                    <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/althai.uae/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
 
-                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/al-thai-food-stuff-trading-l-l-c-47856021a/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
 
                 </div>
             </div>
@@ -60,9 +61,9 @@
             <li class="logo"><a href=""><img src="./assets/images/logo/althai-banner-curve-white-sq.png" alt=""></a>
             </li>
             <li class="hideOnMobile"><a href="/">Home|الرئيسية</a></li>
-            <li class="hideOnMobile"><a href="/promo">About|حول</a></li>
-            <li class="hideOnMobile"><a href="#CONTACT">Menu|قائمة طعام</a></li>
-            <li class="hideOnMobile"> <a href="">Contact|اتصال</a></li>
+            <li class="hideOnMobile"><a href="/our-story">About|حول</a></li>
+            <li class="hideOnMobile"><a href="/menu">Menu|قائمة طعام</a></li>
+            <li class="hideOnMobile"> <a href="/contact">Contact|اتصال</a></li>
 
 
             <li class="menu-button" onclick="showSidebar()"><a href="#" target="_parent"><i
@@ -127,9 +128,9 @@
                 class="fa-solid fa-angle-right"></i></button>
 
         <div class="social-fsx-icons animate">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/althai.uae/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/althaiuae" target="_blank"><i class="fa-brands fa-facebook-f" ></i></a>
+            <a href="https://www.linkedin.com/in/al-thai-food-stuff-trading-l-l-c-47856021a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
 
@@ -149,11 +150,12 @@
                 </div>
             </div>
             <div class="contact">
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
             </div>
         </div>
     </div>
 
+    <!-- / menu  -->
 
     <section class="menu">
         <h2>Specialties <span>Our Menu</span></h2>
@@ -165,7 +167,7 @@
                 <div class="details">
                     <h3>Spices</h3>
                     <p>Black Pepper, Coriander, Cumin, Red Chili, Turmeric, White Pepper, Gram Flour (Besan)</p>
-                    <button>view</button>
+                    <button onclick="window.location.href='menu#SPICES'">view</button>
                 </div>
             </div>
             <div class="card">
@@ -175,7 +177,7 @@
                 <div class="details">
                     <h3>Pulses</h3>
                     <p>Beans, Pea, Dal, Kalachana, Lentils, Urad Whole, Popcorn</p>
-                    <button>view</button>
+                    <button onclick="window.location.href='menu#PULSES'">view</button>
                 </div>
             </div>
             <div class="card">
@@ -185,7 +187,7 @@
                 <div class="details">
                     <h3>Rices</h3>
                     <p>Basmati Rice, Jasmine Rice, Brown Rice, Arborio Rice, Sushi Rice</p>
-                    <button>view</button>
+                    <button onclick="window.location.href='menu#RICES'">view</button>
                 </div>
             </div>
             <div class="card">
@@ -195,7 +197,7 @@
                 <div class="details">
                     <h3>Flour</h3>
                     <p>All-Purpose Flour, Whole Wheat Flour, Almond Flour, Chickpea Flour, Rice Flour</p>
-                    <button>view</button>
+                    <button onclick="window.location.href='menu#FLOUR'">view</button>
                 </div>
             </div>
             <div class="card">
@@ -206,7 +208,7 @@
                     <h3>Dairy</h3>
                     <p>Instant full cream milk powder, Powdered Milk, Powdered Whey Protein, Powdered Buttermilk,
                         Powdered Creamer</p>
-                    <button>view</button>
+                        <button onclick="window.location.href='menu#DAIRY'">view</button>
                 </div>
             </div>
             <div class="card">
@@ -216,11 +218,95 @@
                 <div class="details">
                     <h3>Nut & Dry Fruits</h3>
                     <p>Almonds, Walnuts, Cashews, Pistachios, Raisins, Dried Apricots</p>
-                    <button>view</button>
+                    <button onclick="window.location.href='menu#NUTS&DRYFRUITS'">view</button>
                 </div>
             </div>
         </div>
     </section>
+
+<!-- / contact ///////////////////----------------------------------------------------- -->
+<section class="contact-short">
+    <div class="container">
+        <div class="contact-info">
+            <h3>Need Assistance?</h3>
+            <p>Feel free to reach out to us with any questions or inquiries. Our team is here to help!</p>
+        </div>
+        <div class="contact-action">
+            <a class="btn btn-contact" href="/contact">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- /blog /////////////////--------------------------------------------------------------------------------- -->
+
+    <section class="blog">
+        <h2>Our Blog/<span>Gallery</span></h2>
+        <div class="container">
+            <div class="card">
+                <div class="image">
+                    <img src="./assets/images/ad/AD_1.jpg" alt="Diary">
+                </div>
+                <div class="details">
+                    <h3 class="date">3 Feb 2024</h3>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4AcEIGSGns/'">View More</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./assets/images/ad/AD_2.jpg" alt="Diary">
+                </div>
+                <div class="details">
+                    <h3 class="date"> 8 Feb 2024</h3>
+                    <p><button>View More</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./assets/images/ad/AD_3.jpg" alt="Diary">
+                </div>
+                <div class="details">
+                    <h3 class="date">20 Feb 2024</h3>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4FpPugST2G/'">View More</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./assets/images/ad/AD_4.jpg" alt="Diary">
+                </div>
+                <div class="details">
+                    <h3 class="date">1 March 2024</h3>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4hoR_KSU8B/'">View More</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./assets/images/ad/AD_5.jpg" alt="Diary">
+                </div>
+                <div class="details">
+                    <h3 class="date">8 March 2024</h3>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4zgtO7pTyN/'">View More</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./assets/images/ad/AD_6.jpg" alt="Diary">
+                </div>
+                <div class="details">
+                    <h3 class="date">18 March 2024</h3>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C47uQZNppP7/'">View More</button></p>
+                </div>
+            </div>
+            <!-- Repeat similar structure for more cards -->
+        </div>
+    </section>
+    
+
+
+
 
     <footer>
         <div class="container-s">
@@ -238,7 +324,7 @@
                         <div class="content">
                             <form class="subscription">
                                 <input class="add-email" type="email" placeholder="subscribe@me.now">
-                                <button class="submit-email" type="button">
+                                <button class="submit-email" type="button" onclick="error_call_submitation_failed()">
                                     <span class="before-submit">Subscribe</span>
                                     <span class="after-submit">Thank you for subscribing!</span>
                                 </button>
@@ -262,10 +348,10 @@
                 <h2>Company</h2>
                 <div class="links">
                     <ul>
-                        <li><a href="">Welcome</a></li>
-                        <li><a href="">Our Story</a></li>
-                        <li><a href="">Help Center</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="/">Welcome</a></li>
+                        <li><a href="/our-story">Our Story</a></li>
+                        <li><a href="/Menu">products</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -274,11 +360,11 @@
                 <h2>Explore</h2>
                 <div class="links">
                     <ul>
+                        <li><a href="#MEET">Meet Our Team</a></li>
                         <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Meet</a></li>
-                        <li><a href="">Map</a></li>
+                        <li><a href="/our-story">About</a></li>
+                        <li><a href="#MENU">Menu</a></li>
+                        <li><a href="/map">Map</a></li>
                     </ul>
                 </div>
             </div>
@@ -292,9 +378,9 @@
         <div class="copyright">
             <div class="container">
                 <p>
-                    Copyright © 2024-2025 <a href="https://althaifoods.com">Al Thai Foodstuff
+                    Copyright © 2024-2025 <a href="https://althaifoods.com" style="color: #f0f0f0;"> Al Thai Foodstuff
                         Trading&nbsp;LLC</a>
-                    | Designed by <a rel="sponsored" href="https://braitenx.com" target="_blank">Braitnex</a>
+                    | Designed by <a rel="sponsored" href="https://braitenx.com" target="_blank" style="color: #f0f0f0;">Braitnex</a>
                 </p>
             </div>
         </div>

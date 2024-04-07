@@ -1,33 +1,86 @@
+<section class="blog">
+    <h2>Our Blog &amp; Gallery</h2>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="./assets/images/others/diary.jpeg" alt="Diary">
+            </div>
+            <div class="details">
+                <h3 class="date">Sep 10, 2024</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <!-- Repeat similar structure for more cards -->
+    </div>
+</section>
 <style>
-    
-    .subscribe {
-    font-size: 0; /* Remove whitespace */
+    .blog {
+    text-align: center;
+    padding: 40px 0;
 }
 
-.subscribe input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 5px;
-    width: 200px; /* Adjust width as needed */
-    font-size: 16px; /* Set font-size for child elements */
+.blog h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.subscribe input[type="button"] {
-    padding: 10px 20px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.card .details {
+    padding: 20px;
+}
+
+.card .details h3.date {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card .details p {
+    margin-bottom: 20px;
+}
+
+.card .details button {
     background-color: #4CAF50;
-    color: white;
     border: none;
-    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.subscribe input[type="button"]:hover {
+.card .details button:hover {
     background-color: #45a049;
 }
 
 </style>
-<div class="subscribe">
-    <input type="text" placeholder="Email address">
-    <input type="button" value="subscribe">
-</div>

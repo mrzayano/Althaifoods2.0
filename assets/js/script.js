@@ -102,3 +102,8 @@ document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
   e.preventDefault();
   document.querySelector('.subscription').classList.add('done');
 });
+
+// alert 
+function error_call_submitation_failed() {
+  alert('404 Error currently not available contact form please contact +97121892932')
+}
