@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
 * {
   padding: 0;
@@ -15,8 +17,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   /* font-family: 'rubic', sans-serif; */
+  font-family: 'jost';
+  font-family: 'mooli';
+  /* font-family: 'poppins'; */
   background: #fff8f8;
-font-family: 'poppins';
 }
 
 :root {
@@ -572,9 +576,10 @@ nav .logo a img {
   display: flex;
   flex-direction: column;
 }
-.menu h2 span{
-font-size:2.8rem ;
-font-weight: 700;
+
+.menu h2 span {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 .menu h3 {
@@ -582,6 +587,7 @@ font-weight: 700;
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 
 .menu p {
   margin-bottom: 10px;
@@ -614,7 +620,8 @@ font-weight: 700;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Align content evenly */
+  justify-content: space-between;
+  /* Align content evenly */
   height: 100%;
 }
 
@@ -630,7 +637,161 @@ font-weight: 700;
   font-size: 1rem;
   color: #fff;
   border-radius: 5px;
-  align-self: flex-end; /* Align button to the bottom */
+  align-self: flex-end;
+  /* Align button to the bottom */
+}
+
+
+
+/* footer /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+footer {
+  width: 100%;
+  /* overflow: hidden; */
+  background: #1d2636;
+}
+
+footer {
+  color: #ffffff;
+}
+
+footer img {
+  height: 100px;
+}
+
+
+footer .left {
+  margin-right: 30px;
+  /* margin-top: 70px; */
+
+}
+
+
+footer a,
+footer p {
+  color: #5e6d88;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer .container-s .left h2 {
+  margin-bottom: 6px;
+  font-size: 20px;
+
+}
+
+footer .container-s .left p {
+  margin-bottom: 20px;
+}
+
+footer .container-s {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 30px 100px 30px 100px;
+}
+
+footer .link {
+  height: 150px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.subscribe .content {
+  width: 360px;
+  height: 40px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+footer .team-details {
+  line-height: 30px;
+}
+
+footer .team-details p a {
+  font-size: 17px;
+}
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subscription .add-email {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  outline: none;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #ff4f4f;
+  color: #FFFFFF;
+  transition: width .35s ease-in-out,
+    background .35s ease-in-out;
+}
+
+.subscription.done .submit-email {
+  width: 100%;
+  background: linear-gradient(to right, #ffadad, #ff0000);
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 38px;
+  transition: visibility .35s ease-in-out,
+    opacity .35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+  transition-delay: .35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-top: .01px solid #253248;
 }
 
 
@@ -640,20 +801,26 @@ font-weight: 700;
 
 
 
+@media (max-width:1000px) {
+  footer .container-s {
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
 
+@media(max-width:650px) {
+  footer .container-s {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
+  .subscribe .content {
+    width: 250px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+  footer .team-details {
+    width: 90%;
+  }
+}
 
 
 

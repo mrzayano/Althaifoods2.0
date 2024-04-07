@@ -95,3 +95,10 @@ window.addEventListener('scroll', function() {
   var bgImg = document.querySelector('.bg-img');
   bgImg.style.backgroundPosition = 'center ' + (-scrollTop / 3) + 'px';
 });
+
+// sub
+
+document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
+  e.preventDefault();
+  document.querySelector('.subscription').classList.add('done');
+});

@@ -1,35 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Even Row Color Change</title>
 <style>
-  /* CSS Grid for layout */
-  .products {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-  }
-  
-  /* CSS to change the color of even rows */
-  .products > .card:nth-child(4n), .products > .card:nth-child(4n - 1) {
-    background-color: rgb(0, 0, 0); /* Change this to the color you desire */
-  }
+    
+    .subscribe {
+    font-size: 0; /* Remove whitespace */
+}
+
+.subscribe input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 200px; /* Adjust width as needed */
+    font-size: 16px; /* Set font-size for child elements */
+}
+
+.subscribe input[type="button"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe input[type="button"]:hover {
+    background-color: #45a049;
+}
+
 </style>
-</head>
-<body>
-
-<div class="products">
-  <p class="card">hello</p>
-  <p class="card">hello</p>
-  <p class="card">hello</p>
-  <p class="card">hello</p>
-  <p class="card">hello</p>
-  <p class="card">hello</p>
-  <p class="card">hello</p>
-  <p class="card">hello</p>
+<div class="subscribe">
+    <input type="text" placeholder="Email address">
+    <input type="button" value="subscribe">
 </div>
-
-</body>
-</html>
